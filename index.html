@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Showcase | Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="case-study-enhanced.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <div id="cursor-halo"></div>
+    <script src="cursor.js" defer></script>
+    <script src="gallery.js" defer></script>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo magnetic">PORTFOLIO.</div>
+        <div class="nav-links">
+            <a href="#work" class="magnetic">Work</a>
+            <a href="#about" class="magnetic">About</a>
+            <a href="#contact" class="cta-button magnetic">Contact</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="magnetic">Design that speaks.<br>Minimal. Timeless.</h1>
+            <p class="subtitle magnetic">A curation of brand identity, digital experiences, and visual storytelling.</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- MINIMAL ABOUT SECTION -->
+        <section class="section-block about-section" id="about">
+            <div class="about-container reveal-on-scroll">
+                <div class="about-grid">
+                    <div class="portrait-column">
+                        <div class="portrait-frame">
+                            <img src="images/profile.png" alt="Vansh Bansal" draggable="false">
+                        </div>
+                    </div>
+                    <div class="details-column">
+                        <div class="details-content">
+                            <h2 class="designer-name">Vansh Bansal</h2>
+
+                            <div class="contact-block">
+                                <a href="mailto:vanshbansal1357@gmail.com"
+                                    class="contact-link magnetic">vanshbansal1357@gmail.com</a>
+                                <div class="social-links">
+                                    <a href="https://www.linkedin.com/in/vansh-bansal-61a1a8331/" target="_blank"
+                                        class="social-link magnetic">LinkedIn</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VARIATION 1: PERSONAL BRAND FOCUSED -->
+        <section class="section-block" id="personal-brand">
+            <div class="section-header">
+                <span class="label">01 — Personal Brand</span>
+                <h2>The Workspace</h2>
+            </div>
+            <div class="showcase-card large-card glass-panel">
+                <div class="card-image-placeholder workspace-bg">
+                    <div class="overlay-content">
+                        <h3>Vansh Bansal</h3>
+                        <p>Visual Designer & Art Director</p>
+                    </div>
+                </div>
+                <div class="card-details">
+                    <p>A digital representation of the creative process. Showcasing the environment where ideas come to
+                        life.</p>
+                    <a href="#" class="link-arrow">View Profile <span class="arrow">→</span></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- TOOLKIT SECTION -->
+        <section class="section-block" id="toolkit">
+            <div class="section-header">
+                <span class="label">02 — Toolkit</span>
+                <h2>Creative Arsenal</h2>
+            </div>
+            <div class="toolkit-grid glass-panel"
+                style="padding: 3rem; display: flex; gap: 4rem; justify-content: center; align-items: center;">
+                <div class="tool-item" style="text-align: center;">
+                    <img src="images/canva-logo.png" style="height: 64px; width: auto; margin-bottom: 1rem;"
+                        alt="Canva">
+                    <p style="font-weight: 500; color: var(--text-primary);">Canva</p>
+                </div>
+                <div class="tool-item" style="text-align: center;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
+                        style="height: 64px; width: auto; margin-bottom: 1rem;" alt="Photoshop">
+                    <p style="font-weight: 500; color: var(--text-primary);">Photoshop</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- VARIATION 2: VISUAL IMPACT (3x3 Grid) -->
+        <section class="section-block" id="visual-impact">
+            <div class="section-header">
+                <span class="label">02 — Visual Impact</span>
+                <h2>Creative Gallery</h2>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Row 1 -->
+                <div class="gallery-item">
+                    <img src="images/sale-phones.png" alt="Creative Work 1" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/pizza-ad.png" alt="Creative Work 2" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/sale-gopro.png" alt="Creative Work 3" loading="lazy">
+                </div>
+                <!-- Row 2 -->
+                <div class="gallery-item">
+                    <img src="images/grid-new-1.png" alt="Creative Work 4" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/grid-new-2.png" alt="Creative Work 5" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/grid-new-3-v2.png" alt="Creative Work 6" loading="lazy">
+                </div>
+                <!-- Row 3 -->
+                <div class="gallery-item">
+                    <img src="images/grid-new-4.png" alt="Creative Work 7" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/grid-new-5.png" alt="Creative Work 8" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/grid-new-6.png" alt="Creative Work 9" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox" class="lightbox">
+            <span class="close-lightbox">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
+            <div class="lightbox-caption"></div>
+        </div>
+
+
+
+        <!-- VARIATION 3: CLIENT CASE STUDY STYLE -->
+        <section class="section-block" id="case-study">
+            <div class="section-header reveal-on-scroll">
+                <span class="label">03 — Case Study</span>
+                <h2>Project: Synthesis</h2>
+            </div>
+            <div class="case-study-grid">
+                <!-- Identity Card (Full Width) -->
+                <div class="cs-card identity-card glass-panel reveal-on-scroll">
+                    <span class="cs-label">The Identity</span>
+                    <div class="logo-wrapper">
+                        <div class="syn-logo">S</div>
+                        <div class="syn-glow"></div>
+                    </div>
+                    <p class="cs-desc">Reflecting the convergence of digital & human. Minimalist, geometric, timeless.
+                    </p>
+                </div>
+
+                <!-- Typography Card -->
+                <div class="cs-card type-card glass-panel reveal-on-scroll" style="transition-delay: 0.1s;">
+                    <div class="card-top">
+                        <span class="cs-label">Typography</span>
+                    </div>
+                    <div class="type-visual">
+                        <span class="huge-type">Aa</span>
+                        <div class="type-details">
+                            <span class="font-title">Inter Tight</span>
+                            <span class="font-usage">Primary / Display</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Palette Card -->
+                <div class="cs-card palette-card glass-panel reveal-on-scroll" style="transition-delay: 0.2s;">
+                    <span class="cs-label">Palette</span>
+                    <div class="swatch-container">
+                        <div class="swatch white-swatch">
+                            <span class="hex">#FFFFFF</span>
+                        </div>
+                        <div class="swatch indigo-swatch">
+                            <span class="hex">#6366F1</span>
+                        </div>
+                        <div class="swatch dark-swatch">
+                            <span class="hex">#0F172A</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <footer class="footer">
+        <p>&copy; 2024 Portfolio Design. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
